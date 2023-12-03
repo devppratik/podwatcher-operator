@@ -1,0 +1,12 @@
+apiVersion: watcher.example.com/v1
+kind: PodWatcher
+metadata:
+  labels:
+    app.kubernetes.io/name: podwatcher
+    app.kubernetes.io/instance: podwatcher-sample
+    app.kubernetes.io/part-of: podwatcher-operator
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: podwatcher-operator
+  name: podwatcher-sample
+spec:
+  size : 2
